@@ -10,6 +10,12 @@
     "productName": "WhatsAppViewer",
     "version": "0.0.0"
   },
+  "updater": {
+    "active": true,
+    "endpoints": ["https://releases.mrmelon54.com/{{target}}/{{current_version}}"],
+    "dialog": true,
+    "pubkey": "YOUR_UPDATER_SIGNATURE_PUBKEY_HERE"
+  },
   "tauri": {
     "allowlist": {
       "all": false,
@@ -26,13 +32,7 @@
         "depends": []
       },
       "externalBin": [],
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ],
+      "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
       "identifier": "xyz.mrmelon54.WhatsAppViewer",
       "longDescription": "",
       "macOS": {
