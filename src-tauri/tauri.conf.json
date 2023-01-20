@@ -10,12 +10,6 @@
     "productName": "WhatsAppViewer",
     "version": "0.0.0"
   },
-  "updater": {
-    "active": true,
-    "endpoints": ["https://releases.mrmelon54.com/{{target}}/{{current_version}}"],
-    "dialog": true,
-    "pubkey": "YOUR_UPDATER_SIGNATURE_PUBKEY_HERE"
-  },
   "tauri": {
     "allowlist": {
       "all": false,
@@ -55,7 +49,10 @@
       "csp": null
     },
     "updater": {
-      "active": false
+      "active": true,
+      "endpoints": ["https://releases.mrmelon54.com/{{target}}.json"],
+      "dialog": true,
+      "pubkey": "YOUR_UPDATER_SIGNATURE_PUBKEY_HERE"
     },
     "windows": [
       {
