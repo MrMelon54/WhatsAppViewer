@@ -6,4 +6,5 @@ export type UserId = number & {
 
 export interface UserData {
   id: UserId;
+  name: string;
 }
